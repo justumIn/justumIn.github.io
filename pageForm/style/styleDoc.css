@@ -12,7 +12,7 @@ body {
 
 /*  */
 
-.claim-conteiner { display: none; }
+.invisible { display: none; }
 
 .claim-conteiner {	margin: 0 50px;	}
 
