@@ -42,23 +42,23 @@
 		<h2 class="field-title">ПОЗОВНА ЗАЯВА ПРО СТЯГНЕННЯ ЗАБОРГОВАНОСТІ ПО РОЗПИСЦІ</h2>
 		<form class="field-claim">
 			<p class="field-court">Введіть назву суду:</p>
-			<input class="field__input" type="text" id="court" value='' placeholder="Деснянський районний суд міста Києва">
+			<input class="field" type="text" id="court" data-name="court" value='' placeholder="Деснянський районний суд міста Києва">
 			<p class="field-plaintiff">Введіть П.І.Б. Позивача:</p>
-			<input class="field__input" type="text" id="plaintiff" value='' placeholder="Куренков Василь Петрович">			
+			<input class="field" type="text" id="plaintiff" data-name="plaintiff" value='' placeholder="Куренков Василь Петрович">			
 			<p class="field-plaintiffAdress">Введіть адресу проживання Позивача:</p>
-			<input class="field__input" type="text" id="plaintAdress" value='' placeholder="01234, м. Київ, вул. Т.Шевченка, б. 45, кв. 100">
+			<input class="field" type="text" id="plaintifadress" data-name="plaintifadress" value='' placeholder="01234, м. Київ, вул. Т.Шевченка, б. 45, кв. 100">
 			<p class="field-defendant">Введіть П.І.Б. Відповідача:</p>
-			<input class="field__input" type="text" id="defendant" value='' placeholder="Петренко Григорій Сергійович">
+			<input class="field" type="text" id="defendant" data-name="defendant" value='' placeholder="Петренко Григорій Сергійович">
 			<p class="field-defendantAdress">Введіть адресу проживання Відповідача:</p>
-			<input class="field__input" type="text" id="defendAdres" value='' placeholder="01000, м. Київ, вул. Інститутська, б. 1, кв. 1">
+			<input class="field" type="text" id="defendadress" data-name="defendadress" value='' placeholder="01000, м. Київ, вул. Інститутська, б. 1, кв. 1">
 			<p class="field-price">Введіть ціну позову, тобто суму, яку Ви бажаєте стягнути із Відповідача:</p>
-			<input class="field__input" type="text" id="price" value='' placeholder="1000 гривень">
+			<input class="field" type="text" id="price" data-name="price" value='' placeholder="1000 гривень">
 			<p class="field-dataDebt">Введіть дату коли було видано позику в форматі 01.09.2015:</p>
-			<input class="field__input" type="text" id="dataDebt" value='' placeholder="01.09.2015">
+			<input class="field" type="text" id="datadebt" data-name="datadebt" value='' placeholder="01.09.2015">
 			<p class="field-dataCred">Введіть дату коли Відповідач повинен був повернути борг у форматі 01.09.2015:</p>
-			<input class="field__input" type="text" id="dataCred" value='' placeholder="01.09.2015">
+			<input class="field" type="text" id="datacred" data-name="datacred" value='' placeholder="01.09.2015">
 			<p class="field-dataNow">Введіть дату подачі позову до суду у форматі 01.09.2015:</p>
-			<input class="field__input" type="text" id="dataNow" value='' placeholder="01.09.2015">			
+			<input class="field" type="text" id="datanow" data-name="datanow" value='' placeholder="01.09.2015">			
 			<div class="field__input-sub">
 				<input class="field__input-submit" type="submit" name="create" value="СТВОРИТИ ПОЗОВ">
 			</div>
@@ -86,16 +86,16 @@
 
 	<div class="claim-conteiner invisible">
 		<div class="head-claim">
-			<p class="court  enter">До: court</p>
-			<p class="plaintiff  enter">Позивач: plaintiff</p>
-			<p class="plaintiff-adress  enter">адреса: plaintadress</p>
-			<p class="defendant  enter">Відповідач: defendant</p>
-			<p class="defendant-adress  enter">адреса: defendadres</p>
-			<p class="price  enter">Ціна позову: price</p>
+			<p class="enter">До: court</p>
+			<p class="enter">Позивач: plaintiff</p>
+			<p class="enter">адреса: plaintifadress</p>
+			<p class="enter">Відповідач: defendant</p>
+			<p class="enter">адреса: defendadress</p>
+			<p class="enter">Ціна позову: price</p>
 		</div>
 		<h1 class="claim-title">ПОЗОВНА ЗАЯВА</h1>
 		<h2 class="claim-subtitle">про стягнення боргу за розпискою</h2>
-		<p class="claim-text  enter"> dataDebt року defendant, що мешкає за адресою:  defendadres, (надалі – «Відповідач») під розписку позичив у plaintiff (надалі – «Позивач») гроші у розмірі price строком до dataCred року.</p>
+		<p class="claim-text  enter"> datadebt року defendant, що мешкає за адресою:  defendadress, (надалі – «Відповідач») під розписку позичив у plaintiff (надалі – «Позивач») гроші у розмірі price строком до datacred року.</p>
 		<p class="claim-text">Відповідно до ст.ст. 1046, 1047 Цивільного кодексу України (надалі – ЦК України) за договором позики одна сторона (позикодавець) передає у власність другій стороні (позичальникові) грошові кошти або інші речі, визначені родовими ознаками, а позичальник зобов’язується повернути позикодавцеві таку ж суму грошових коштів (суму позики) або таку ж кількість речей того ж роду та такої ж якості. Договір позики є укладеним з моменту передання грошей або інших речей, визначених родовими ознаками. На підтвердження укладення договору позики та його умов може бути представлена розписка позичальника або інший документ, який посвідчує передання йому позикодавцем визначеної грошової суми або визначеної кількості речей.</p>
 		<p class="claim-text">П.1 статті 1049 діючого Цивільного кодексу України, передбачено, що Позичальник зобов’язаний повернути позикодавцеві позику (грошові кошти у такій самій сумі, що були передані йому позикодавцем) у строк та в порядку, що встановлені договором.</p>
 		<p class="claim-text">До сьогоднішнього часу Відповідач ухиляється від повернення суми боргу, чим порушив взяті на себе зобов’язання.</p>
@@ -111,96 +111,28 @@
 			<li class="claim-add__li">Копія поспорту Позивача.</li>
 			<li class="claim-add__li">Копія розписки.</li>			
 		</ol>
-		<p class="claim__signature  enter"><span class="claim__data-now  enter">dataNow</span> _________________<span class="claim__plaintiff  enter">plaintiff</span>
+		<p class="claim__signature  enter"><span class="claim__data-now  enter">datanow</span> _________________<span class="claim__plaintiff  enter">plaintiff</span>
 		</p>
 	</div>
 	<script type="text/javascript">
-		let form = document.querySelector("form");
-		let getWord = document.getElementsByClassName('enter');
-		let content = document.querySelector(".conteiner");	
-		let claim = document.querySelector(".invisible");
-
-
+		let form = document.querySelector("form"); // сохраняем в переменную, что бы обратиться для прослушки события
 		form.addEventListener("submit", function(event) {
-			setTemplateCourt();    
-			setTemplatePlaintiff();
-			setTemplatePlaintAdress();
-			setTemplateDefendant();
-			setTemplateDefendAdres();
-			setTemplatePrice();
-			setTemplateDataDebt();
-			setTemplateDataCred();
-			setTemplateDataNow();
+			let str = document.getElementsByClassName("field"); // получаем коллекцию инпутов, что бы получаить значение value
+			let elem = document.getElementsByClassName("enter"); // получаем коллекцию из элементов куда надо вставить вписаное пользователем
+			let content = document.querySelector(".conteiner");	// записываем, что бы поставить переключатель классов
+			let claim = document.querySelector(".invisible"); // записываем, что бы поставить переключатель классов
 
-
-			content.classList.toggle("invisible");
-			claim.classList.toggle("invisible");
-
-			event.preventDefault();
+			for(let i = 0; i < str.length; i++) { // по очереди получаем все что вписывал пользователь
+		    let string = str[i].getAttribute('data-name'); // получаем имя атрибута в виде строки
+		    let temp = document.getElementById(string).value; // имя атрибута вписаное в поле инпута
+		    for(let y = 0; y < elem.length; y++) { // по очередно проходим циклом по строкам куда надо вставить текст пользоавтеля и вставляем, сначало для первого поля инпута проходит по всему тексту, потом для второго и так далее.
+		    	elem[y].innerHTML = elem[y].innerHTML.replace(string, temp);
+		    }
+		  }
+		  content.classList.toggle("invisible");// меняем класс
+		  claim.classList.toggle("invisible");// меняем класс
+		  event.preventDefault();
 		});
-
-		function setTemplateCourt() {
-			let court = document.getElementById('court').value;    
-			for(let i = 0; i < getWord.length; i++) {
-				getWord[i].innerHTML = getWord[i].innerHTML.replace(/court/g, court);        
-			}
-		}
-
-		function setTemplatePlaintiff() {
-			let plaintiff = document.getElementById('plaintiff').value;    
-			for(let i = 0; i < getWord.length; i++) {
-				getWord[i].innerHTML = getWord[i].innerHTML.replace(/plaintiff/g, plaintiff);        
-			}
-		}
-
-		function setTemplatePlaintAdress() {
-			let plaintAdress = document.getElementById('plaintAdress').value;    
-			for(let i = 0; i < getWord.length; i++) {
-				getWord[i].innerHTML = getWord[i].innerHTML.replace(/plaintadress/g, plaintAdress);        
-			}
-		}
-
-		function setTemplateDefendant() {
-			let defendant = document.getElementById('defendant').value;    
-			for(let i = 0; i < getWord.length; i++) {
-				getWord[i].innerHTML = getWord[i].innerHTML.replace(/defendant/g, defendant);        
-			}
-		}
-
-		function setTemplateDefendAdres() {
-			let defendAdres = document.getElementById('defendAdres').value;    
-			for(let i = 0; i < getWord.length; i++) {
-				getWord[i].innerHTML = getWord[i].innerHTML.replace(/defendadres/g, defendAdres);        
-			}
-		}
-
-		function setTemplatePrice() {
-			let price = document.getElementById('price').value;    
-			for(let i = 0; i < getWord.length; i++) {
-				getWord[i].innerHTML = getWord[i].innerHTML.replace(/price/g, price);        
-			}
-		}
-
-		function setTemplateDataDebt() {
-			let dataDebt = document.getElementById('dataDebt').value;    
-			for(let i = 0; i < getWord.length; i++) {
-				getWord[i].innerHTML = getWord[i].innerHTML.replace(/dataDebt/g, dataDebt);        
-			}
-		}
-
-		function setTemplateDataCred() {
-			let dataCred = document.getElementById('dataCred').value;    
-			for(let i = 0; i < getWord.length; i++) {
-				getWord[i].innerHTML = getWord[i].innerHTML.replace(/dataCred/g, dataCred);        
-			}
-		}
-
-		function setTemplateDataNow() {
-			let dataNow = document.getElementById('dataNow').value;    
-			for(let i = 0; i < getWord.length; i++) {
-				getWord[i].innerHTML = getWord[i].innerHTML.replace(/dataNow/g, dataNow);        
-			}
-		}
 </script>
 </body>
 </html>

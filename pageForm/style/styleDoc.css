@@ -111,7 +111,7 @@ body {
 	margin: 50px 0 50px 100px; 
 }
 
-.field__input {
+.field {
  	width: 500px;
  	height: 30px;
  	border-radius: 10px;
